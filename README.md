@@ -30,4 +30,11 @@ application over the internet.
       1.  Download source code from your github repo: https://github.com/cgpeanut/eks-aws.git
       2.  Use kubectl to create a LoadBalancer service
       3.  Check the status of your cluster deployment, and pods unsing kubectl.
-      4.  When the - Deployment - on your EKS cluster, using the standard nginx image EKS 
+      4.  When the Deployment is up an running, check that you can access your application using DNS name of the LoadBalancer. 
+
+    step 5:
+      1. In the AWS Console, shut down all the worker nodes. 
+      2. Check the status of your cluster, deployment and pods using kubectl.
+      3. After a few minutes, you should see EKS launching new instances to keep you service running,
+      4. When the cluster is back to a steady state, check that your application is up and running.
+
